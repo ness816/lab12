@@ -2,6 +2,12 @@
 
 using namespace std;
 
+
+
+template <typename ness>
+void mySwap(ness &,ness &);
+
+
 int main(){
 	int x, y;
 	string a, b;
@@ -30,3 +36,11 @@ int main(){
 	return 0;
 }
 
+template <typename ness>
+void mySwap(ness &x,ness &y)
+{
+	ness q = x;
+	x = y;
+	y = q;
+
+}
